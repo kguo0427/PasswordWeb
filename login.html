@@ -1,0 +1,38 @@
+<html>
+	<head>
+		<title>the Login page</title>
+		<link rel = "stylesheet" href = "css/main.css">
+		
+	</head>
+
+	<body>
+		<header>
+			<div class = "pageTitle">
+				<font size = "24">Wind Blows</font>
+			</div>
+		</header>
+		1. sign up button will lead to the create new user page. it will ask for user name, preferred nickname, password twice, email, phone number, 3 security questions.<br>
+		2. log in button will authenticate the user's information. I am thinking about using sqlite for database.<br>
+		3. don't worry about can't log in yet. it is going to ask one of the 3 security questions and then either send the password by email or via text message.<br>
+
+		<div class = "login">
+			<br><br><br>
+			<div class="loginPageInput">
+				Username:<br>
+				<input type = "text" name = "userName" size = "20" width = "20"> <br>
+			</div>
+			<div class="loginPageInput">
+				Password:<br>
+				<input type = "password" name = "passWord" size = "20" width = "200"> <br>
+			</div>
+			<br>
+			<div class="dline">
+				<button class = "loginPageButton" type = "button" name = "login">Log in</button><br>
+				<button class = "loginPageButton" type = "button" name = "recover">Can't log in</button><br>
+				<button class = "loginPageButton" type = "button" name = "signup">Sign up</button>
+			</div>
+			<br><br><br>
+		</div>
+
+	</body>
+</html>
