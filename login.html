@@ -2,6 +2,7 @@
 	<head>
 		<title>the Login page</title>
 		<link rel = "stylesheet" href = "css/main.css">
+		<link rel = "stylesheet" href = "css/login.css">
 		
 	</head>
 
@@ -19,20 +20,30 @@
 			<br><br><br>
 			<div class="loginPageInput">
 				Username:<br>
-				<input type = "text" name = "userName" size = "20" width = "20"> <br>
+				<input type = "text" id = "username" size = "20" width = "20"> <br>
 			</div>
 			<div class="loginPageInput">
 				Password:<br>
-				<input type = "password" name = "passWord" size = "20" width = "200"> <br>
+				<input type = "password" id = "password" size = "20" width = "200"> <br>
 			</div>
 			<br>
 			<div class="dline">
-				<button class = "loginPageButton" type = "button" name = "login">Log in</button><br>
-				<button class = "loginPageButton" type = "button" name = "recover">Can't log in</button><br>
-				<button class = "loginPageButton" type = "button" name = "signup">Sign up</button>
+				<button class = "loginPageButton" type = "button" id = "login">Log in</button><br>
+				<button class = "loginPageButton" type = "button" id = "recover">Can't log in</button><br>
+				<button class = "loginPageButton" type = "button" id = "signup">Sign up</button>
 			</div>
 			<br><br><br>
 		</div>
-
+		<script type="text/javascript">
+			document.getElementById("login").onclick = function () {
+				window.alert("not yet implemented");
+			};
+			document.getElementById("recover").onclick = function () {
+				window.alert("not yet implemented");
+			};
+			document.getElementById("signup").onclick = function () {
+				location.href = "signup.html";
+			};
+		</script>
 	</body>
 </html>
